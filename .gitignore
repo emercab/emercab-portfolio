@@ -1,0 +1,4 @@
+/.vscode
+/api/vendor
+/api/sendEmail.php
+.htaccess
