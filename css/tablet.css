@@ -1,0 +1,42 @@
+.container {
+  width: 85%;
+}
+.line-first-color,
+.line-second-color {
+  width: 80%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.profile__data {
+  grid-template-columns: 260px auto;
+  column-gap: 2rem;
+  width: 95%;
+}
+.profile__border {
+  margin-bottom: 0;
+}
+.profile__info {
+  padding: 0;
+}
+.profile__info, .about__info, .about__skills {
+  text-align: left;
+}
+.profile__social--icons {
+  justify-content: flex-start;
+}
+
+.about__container {
+  grid-template-columns: 50% 50%;
+}
+
+.about__skills--tabs {
+  font-size: var(--normal-font-size);
+}
+
+.about__skills--skill {
+  max-width: 150px;
+}
+
+.footer__container {
+  justify-content: space-between;
+}
