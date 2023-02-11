@@ -21,6 +21,7 @@ function sendMessage(e) {
 
   myFormData = new FormData(contactForm);
   // const name = myFormData.get('txtName');
+  console.log(myFormData);
 
   const urlApi = '../api/sendMessage.php';
   
@@ -45,11 +46,15 @@ function sendMessage(e) {
       if (!valid_name) {
         printAlert(alertTxtName, 'Escriba un nombre válido.');
       }
-      if (!valid_email) {
+      else if (!valid_email) {
         printAlert(alertTxtEmail, 'Escriba un email válido.');
       }
-      if (!valid_message) {
+      else if (!valid_message) {
         printAlert(alertTxtMessage, 'Debe escribir un mensaje.');
+      }
+      else {
+        printAlert(alertFailSubmit, 'Error al enviar, vuelva a intentarlo.');
+        loader.classList.add('no-display');
       }
     }
   })

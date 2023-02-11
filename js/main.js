@@ -1,13 +1,11 @@
 
 /*=============== MENU MOBILE ===============*/
-const menuMobile = document.querySelector('.menu-mobile');
+const menuMobileBtn = document.querySelector('.menu-mobile-btn');
 const menu = document.querySelector('.menu');
 
-menuMobile.addEventListener('click', showMobileMenu);
+menuMobileBtn.addEventListener('click', showMobileMenu);
 
 function showMobileMenu() {
-  //shoppingCartDetail.classList.remove('show-aside')
-  //productDetail.classList.remove('show-aside');
   menu.classList.toggle('show_menu');
 }
 

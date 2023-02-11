@@ -211,6 +211,7 @@ label { display: inline-block; }
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  overflow-x: hidden;
 }
 .menubar__container .logo {
   width: auto;
@@ -218,17 +219,17 @@ label { display: inline-block; }
 }
 .menu {
   position: absolute;
-  top: 10rem;
-  right: -100%; /* Oculto por defecto */
-  width: 200px;
+  top: -100%; /* Oculto por defecto */
+  right: 0;
+  width: 20rem;
   text-align: center;
   background-color: var(--section-color);
   z-index: 99;
   box-shadow: -2px 4px 12px var(--text-color);
-  transition: .4s right;
+  transition: .3s top;
 }
 .show_menu {
-  right: 0;
+  top: 10rem;
 }
 .menu__item {
   margin: 25px;
@@ -241,7 +242,7 @@ label { display: inline-block; }
   background-color: var(--section-color2);
   border-radius: 8px;
 }
-.menu-mobile {
+.menu-mobile-btn {
   display: block;
   color: var(--text-color);
   border: 1px solid var(--text-color);

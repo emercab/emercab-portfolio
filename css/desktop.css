@@ -34,7 +34,7 @@
   background-color: var(--section-color2);
   border-radius: 8px;
 }
-.menu-mobile {
+.menu-mobile-btn {
   display: none;
 }
 
