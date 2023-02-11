@@ -436,25 +436,36 @@
 
                   <div class="form-container">
 
-                     <!-- Alert de error en campo -->
+                     <!-- Alert de error en name -->
                      <div class="alert alert-danger no-display" id="alertTxtName"></div>
 
                      <div class="form-item w-100">
                         <input type="text" name="txtName" id="txtName" placeholder="Nombre:" autocomplete="off">
                      </div>
 
-                     <!-- Alert de error en campo -->
+                     <!-- Alert de error en email -->
                      <div class="alert alert-danger no-display" id="alertTxtEmail"></div>
 
                      <div class="form-item w-100">
                         <input type="email" name="txtEmail" id="txtEmail" placeholder="Email:" autocomplete="off">
                      </div>
                      
-                     <!-- Alert de error en campo -->
+                     <!-- Alert de error en message -->
                      <div class="alert alert-danger no-display" id="alertTxtMessage"></div>
 
                      <div class="form-item w-100">
                         <textarea name="txtMessage" id="txtMessage" rows="10" value="" placeholder="Mensaje:"></textarea>
+                     </div>
+
+                     <!-- Alert de error en captcha -->
+                     <div class="alert alert-danger no-display" id="alertTxtCaptcha"></div>
+
+                     <div class="captcha-container form-item w-100 flex">
+                        <div class="captcha w-50 flex">
+                           <div class="captcha-content"></div>
+                           <i class="ri-refresh-line captcha-reload-icon"></i>
+                        </div>
+                        <input type="text" name="txtCaptcha" id="txtCaptcha" class="w-100" placeholder="Ingrese el captcha:" autocomplete="off">
                      </div>
                      
                      <!-- Alert de envío con error -->
@@ -512,6 +523,6 @@
 
    <!--=============== JS ===============-->
    <script src="./js/main.js"></script>
-   <script src="./js/contact-form.js"></script>
+   <script src="./js/contact-form.js" type="module"></script>
 </body>
 </html>

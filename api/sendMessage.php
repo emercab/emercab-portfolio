@@ -7,14 +7,16 @@ $resp = [];
 $name = null;
 $email = null;
 $message = null;
+$captcha = null;
 
 $validName = false;
 $validEmail = false;
 $validMessage = false;
+$validCaptcha = false;
 
 function validName(string $name) : bool {
     // Valido con expresiones regulares
-    $pattern = "/^[ a-zA-ZáéíóúÁÉÍÓÚ]+$/";
+    $pattern = "/^[ a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/";
     return preg_match($pattern, $name);
 }
 
@@ -42,8 +44,16 @@ if ( isset($_POST['txtMessage']) && $_POST['txtMessage'] != '') {
     $validMessage = true;
 }
 
-// Valido que los tres campos sean correctos para enviar el mensaje
-if ($validName && $validEmail && $validMessage) {
+// Valido captcha
+if ( isset($_POST['txtCaptcha']) && isset($_POST['captcha'])) {
+    $captcha = $_POST['captcha'];
+    $captchaInput = $_POST['txtCaptcha'];
+    if ($captcha === $captchaInput)
+        $validCaptcha = true;
+}
+
+// Valido que los cuatro campos sean correctos para enviar el mensaje
+if ($validName && $validEmail && $validMessage && $validCaptcha) {
     $result = sendEmail($name, $email, $message);
 }
 else {
@@ -54,5 +64,6 @@ $resp['result'] = $result;
 $resp['valid_name'] = $validName;
 $resp['valid_email'] = $validEmail;
 $resp['valid_message'] = $validMessage;
+$resp['valid_captcha'] = $validCaptcha;
 
 echo json_encode($resp);

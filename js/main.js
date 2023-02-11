@@ -15,18 +15,18 @@ const tabs = document.querySelectorAll('.about__skills--tab');
 const contents = document.querySelectorAll('.about__skills--tab-content');
 
 tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => {
-    contents.forEach((content) => {
-      content.classList.remove('visible');
-    });
-    
-    tabs.forEach((t) => {
-      t.classList.remove('active');
-    });
+   tab.addEventListener('click', () => {
+      contents.forEach((content) => {
+         content.classList.remove('visible');
+      });
 
-    tabs[index].classList.add('active');
-    contents[index].classList.add('visible');
-  });
+      tabs.forEach((t) => {
+         t.classList.remove('active');
+      });
+
+      tabs[index].classList.add('active');
+      contents[index].classList.add('visible');
+   });
 });
 
 
@@ -45,31 +45,31 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-fill' ? 'add' : 'remove'](iconTheme)
+   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+   themeButton.classList[selectedIcon === 'ri-moon-fill' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+   // Add or remove the dark / icon theme
+   document.body.classList.toggle(darkTheme)
+   themeButton.classList.toggle(iconTheme)
+   // We save the theme and the current icon that the user chose
+   localStorage.setItem('selected-theme', getCurrentTheme())
+   localStorage.setItem('selected-icon', getCurrentIcon())
+});
 
 
 /*=============== SCROLL SMOOTH IN LINKS ===============*/
 const allLinks = document.querySelectorAll('a[href^="#"]');
 
 allLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    document.querySelector(link.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
-    });
-  });
+   link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href')).scrollIntoView({
+         behavior: 'smooth',
+      });
+   });
 });
 
