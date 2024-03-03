@@ -2,572 +2,584 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!--=============== SEO ===============-->
-	<meta name="description"
-		content="Emerson David Cabrera Salas, Profesor y Desarrollador Web Fullstack. Desarrollo aplicaciones web con HTML, CSS, Javascript, VUE, React Laravel y más." />
-	<meta name="keywords"
-		content="Emerson David Cabrera Salas, Desarrollo web, desarrollador frontend, desarrollador backend, desarrollador PHP, profesor" />
-	<meta name="author" content="Emerson Cabrera Salas" />
-	<meta name="copyright" content="emersoncabrera.com" />
-	<link rel="canonical" href="https://emersoncabrera.com" />
-	<meta name="robots" content="index" />
-	<meta name="robots" content="follow" />
+  <!--=============== SEO ===============-->
+  <meta name="description"
+    content="Emerson David Cabrera Salas, Profesor y Desarrollador Web Fullstack. Desarrollo aplicaciones web con HTML, CSS, Javascript, VUE, React Laravel y más." />
+  <meta name="keywords"
+    content="Emerson David Cabrera Salas, Desarrollo web, desarrollador frontend, desarrollador backend, desarrollador PHP, profesor" />
+  <meta name="author" content="Emerson Cabrera Salas" />
+  <meta name="copyright" content="emersoncabrera.com" />
+  <link rel="canonical" href="https://emersoncabrera.com" />
+  <meta name="robots" content="index" />
+  <meta name="robots" content="follow" />
 
-	<!--=============== FAVICON ===============-->
-	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
-	<!--=============== REMIX ICONS ===============-->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-	<!--=============== CSS ===============-->
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)" />
-	<link rel="stylesheet" href="./css/desktop.css" media="(min-width:992px)" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)" />
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width:992px)" />
 
-	<title>Emerson Cabrera Salas | Profesor y Desarrollador Web Fullstack</title>
+  <title>Emerson Cabrera Salas | Profesor y Desarrollador Web Fullstack</title>
 
-	<!--=============== GOOGLE TAG ===============-->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BEBG8RS4Q"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
+  <!--=============== GOOGLE TAG ===============-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BEBG8RS4Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-		gtag("config", "G-2BEBG8RS4Q");
-	</script>
+    gtag("config", "G-2BEBG8RS4Q");
+  </script>
 </head>
 
 <body>
-	<!--==================== HEADER ====================-->
-	<header id="header">
-		<div class="menubar">
-			<div class="menubar__container container">
-				<!-- Logo -->
-				<img src="./img/logo.png" class="logo" alt="Logo de Emerson Cabrera Salas" />
+  <!--==================== HEADER ====================-->
+  <header id="header">
+    <div class="menubar">
+      <div class="menubar__container container">
+        <!-- Logo -->
+        <img src="./img/logo.png" class="logo" alt="Logo de Emerson Cabrera Salas" />
 
-				<!-- Menu -->
-				<nav>
-					<ul class="menu">
-						<li class="menu__item">
-							<a href="#header">Inicio</a>
-						</li>
+        <!-- Menu -->
+        <nav>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#header">Inicio</a>
+            </li>
 
-						<li class="menu__item">
-							<a href="#about">Sobre Mí</a>
-						</li>
+            <li class="menu__item">
+              <a href="#about">Sobre Mí</a>
+            </li>
 
-						<li class="menu__item">
-							<a href="#projects">Proyectos</a>
-						</li>
+            <li class="menu__item">
+              <a href="#projects">Proyectos</a>
+            </li>
 
-						<li class="menu__item">
-							<a href="#contact">Contacto</a>
-						</li>
-					</ul>
-				</nav>
+            <li class="menu__item">
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
 
-				<!-- Theme button -->
-				<i class="ri-moon-fill change-theme" id="theme-button"></i>
+        <!-- Theme button -->
+        <i class="ri-moon-fill change-theme" id="theme-button"></i>
 
-				<!-- Menu Mobile Button -->
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="menu-mobile-btn"
-					viewBox="0 0 16 16">
-					<path fill-rule="evenodd"
-						d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-				</svg>
-			</div>
-		</div>
+        <!-- Menu Mobile Button -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="menu-mobile-btn"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </div>
+    </div>
 
-		<div class="profile container">
-			<div class="profile__container grid">
-				<div class="profile__data">
-					<div class="profile__border">
-						<div class="profile__background">
-							<img src="./img/emerson-cabrera.png" alt="Imagen de Emerson Cabrera Salas" />
-						</div>
-					</div>
+    <div class="profile container">
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__background">
+              <img src="./img/emerson-cabrera.png" alt="Imagen de Emerson Cabrera Salas" />
+            </div>
+          </div>
 
-					<div class="profile__info">
-						<div class="profile__info--text">
-							<h1 class="text-first-color">Emerson Cabrera Salas</h1>
-							<h3 class="text-second-color">
-								Profesor y Desarrollador Web Fullstack
-							</h3>
-							<div class="line-first-color w-90"></div>
-							<p>
-								Soy Emerson David Cabrera Salas, profesor de tecnología e informática y desarrollador web fullstack en constante formación.
-							</p>
-						</div>
+          <div class="profile__info">
+            <div class="profile__info--text">
+              <h1 class="text-first-color">Emerson Cabrera Salas</h1>
+              <h3 class="text-second-color">
+                Profesor y Desarrollador Web Fullstack
+              </h3>
+              <div class="line-first-color w-90"></div>
+              <p>
+                Soy Emerson David Cabrera Salas, directivo docente, profesor de tecnología e informática y desarrollador web fullstack en
+                constante formación.
+              </p>
+            </div>
 
-						<div class="profile__social">
-							<ul class="profile__social--icons">
-								<li>
-									<a href="https://www.linkedin.com/in/emerson-david-cabrera-salas" target="_blank">
-										<i class="ri-linkedin-fill"></i>
-									</a>
-								</li>
-								<li>
-									<a href="https://github.com/emercab" target="_blank">
-										<i class="ri-github-fill"></i>
-									</a>
-								</li>
-								<li>
-									<a href="https://twitter.com/Emercab" target="_blank">
-										<i class="ri-twitter-fill"></i>
-									</a>
-								</li>
-								<li>
-									<a href="mailto:info@emersoncabrera.com" target="_blank">
-										<i class="ri-mail-line"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+            <div class="profile__social">
+              <ul class="profile__social--icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/emerson-david-cabrera-salas" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/emercab" target="_blank">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Emercab" target="_blank">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@emersoncabrera.com" target="_blank">
+                    <i class="ri-mail-line"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<!--==================== MAIN ====================-->
-	<main class="main">
-		<section class="about" id="about">
-			<div class="about__container container">
-				<!--==================== ABOUT ME ====================-->
-				<div class="about__info">
-					<h2>Sobre Mí</h2>
-					<div class="line-second-color w-90"></div>
-					<p>
-						Soy Ingeniero de Sistemas, con Maestría en Gestión de la Tecnología Educativa. Desarrollo aplicaciones web con tecnologías como HTML, CSS, Javascript, Vue, React, PHP y frameworks como Wordpress, Flask, Laravel y Codeigniter.
-					</p>
-					<p>
-						También soy Docente de Tecnología e Informática, me gusta aplicar la tecnología para promover aprendizajes.
-					</p>
-					<p class="about__location">
-						<i class="ri-map-pin-fill text-first-color"></i>
-						<span class="text-first-color"><strong>Ubicación: </strong></span>Valledupar, Colombia
-					</p>
-				</div>
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <section class="about" id="about">
+      <div class="about__container container">
+        <!--==================== ABOUT ME ====================-->
+        <div class="about__info">
+          <h2>Sobre Mí</h2>
+          <div class="line-second-color w-90"></div>
+          <p>
+            Soy Ingeniero de Sistemas, con Maestría en Gestión de la Tecnología Educativa. Desarrollo aplicaciones web
+            con tecnologías como HTML, CSS, Javascript, Angular, React, PHP y frameworks como Wordpress, Flask, Laravel y
+            Codeigniter.
+          </p>
+          <p>
+            También soy Directivo Docente, Profesor de Tecnología e Informática, me gusta aplicar la tecnología para promover aprendizajes.
+          </p>
+          <p class="about__location">
+            <i class="ri-map-pin-fill text-first-color"></i>
+            <span class="text-first-color"><strong>Ubicación: </strong></span>Valledupar, Colombia
+          </p>
+        </div>
 
-				<!--==================== SKILLS ====================-->
-				<div class="about__skills">
-					<h2>Mis Habilidades</h2>
-					<div class="line-second-color w-90"></div>
+        <!--==================== SKILLS ====================-->
+        <div class="about__skills">
+          <h2>Mis Habilidades</h2>
+          <div class="line-second-color w-90"></div>
 
-					<!-- ==========Tabs========== -->
-					<ul class="about__skills--tabs">
-						<li class="about__skills--tab active">Frontend</li>
-						<li class="about__skills--tab">Backend</li>
-						<li class="about__skills--tab">Utilidades</li>
-					</ul>
+          <!-- ==========Tabs========== -->
+          <ul class="about__skills--tabs">
+            <li class="about__skills--tab active">Frontend</li>
+            <li class="about__skills--tab">Backend</li>
+            <li class="about__skills--tab">Utilidades</li>
+          </ul>
 
-					<!-- ==========Tabs Content========== -->
-					<div class="about__skills--tabs-content-container">
-						<!-- ==========Frontend Skills========== -->
-						<div class="about__skills--tab-content visible">
-							<div class="about__skills--skill">
-								<i class="ri-html5-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>HTML</h4>
-									<p class="state">Intermedio<br /><span>60%</span></p>
-								</div>
-							</div>
+          <!-- ==========Tabs Content========== -->
+          <div class="about__skills--tabs-content-container">
+            <!-- ==========Frontend Skills========== -->
+            <div class="about__skills--tab-content visible">
+              <div class="about__skills--skill">
+                <i class="ri-html5-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>HTML</h4>
+                  <p class="state">Intermedio<br /><span>60%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-css3-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>CSS</h4>
-									<p class="state">Intermedio<br /><span>70%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-css3-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>CSS</h4>
+                  <p class="state">Intermedio<br /><span>70%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-code-box-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Javascript</h4>
-									<p class="state">Intermedio<br /><span>60%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-code-box-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Javascript</h4>
+                  <p class="state">Intermedio<br /><span>70%</span></p>
+                </div>
+              </div>
+              
+              <div class="about__skills--skill">
+                <i class="ri-angularjs-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Angular</h4>
+                  <p class="state">Intermedio<br /><span>60%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-reactjs-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>React</h4>
-									<p class="state">Aprendiendo<br /><span>40%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-reactjs-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>React</h4>
+                  <p class="state">Aprendiendo<br /><span>40%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-vuejs-line about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Vue</h4>
-									<p class="state">Aprendiendo<br /><span>40%</span></p>
-								</div>
-							</div>
-						</div>
+              <div class="about__skills--skill">
+                <i class="ri-vuejs-line about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Vue</h4>
+                  <p class="state">Aprendiendo<br /><span>40%</span></p>
+                </div>
+              </div>
+            </div>
 
-						<!-- ==========Backend Skills========== -->
-						<div class="about__skills--tab-content">
-							<div class="about__skills--skill">
-								<i class="ri-code-box-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Flask</h4>
-									<p class="state">Básico<br /><span>50%</span></p>
-								</div>
-							</div>
+            <!-- ==========Backend Skills========== -->
+            <div class="about__skills--tab-content">
+              <div class="about__skills--skill">
+                <i class="ri-code-box-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Flask</h4>
+                  <p class="state">Básico<br /><span>50%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-braces-line about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Laravel</h4>
-									<p class="state">Intermedio<br /><span>60%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-braces-line about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Laravel</h4>
+                  <p class="state">Intermedio<br /><span>60%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-terminal-window-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Codeigniter</h4>
-									<p class="state">Intermedio<br /><span>70%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-terminal-window-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Codeigniter</h4>
+                  <p class="state">Intermedio<br /><span>70%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-terminal-box-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Node JS</h4>
-									<p class="state">Aprendiendo<br /><span>30%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-terminal-box-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Node JS</h4>
+                  <p class="state">Aprendiendo<br /><span>30%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-database-2-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>SQL</h4>
-									<p class="state">Básico<br /><span>50%</span></p>
-								</div>
-							</div>
-						</div>
+              <div class="about__skills--skill">
+                <i class="ri-database-2-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>SQL</h4>
+                  <p class="state">Básico<br /><span>50%</span></p>
+                </div>
+              </div>
+            </div>
 
-						<!-- ==========Utilities Skills========== -->
-						<div class="about__skills--tab-content">
-							<div class="about__skills--skill">
-								<i class="ri-git-merge-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Git</h4>
-									<p class="state">Básico<br /><span>50%</span></p>
-								</div>
-							</div>
+            <!-- ==========Utilities Skills========== -->
+            <div class="about__skills--tab-content">
+              <div class="about__skills--skill">
+                <i class="ri-git-merge-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Git</h4>
+                  <p class="state">Básico<br /><span>50%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-github-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Github</h4>
-									<p class="state">Básico<br /><span>50%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-github-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Github</h4>
+                  <p class="state">Básico<br /><span>50%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-layout-5-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Figma</h4>
-									<p class="state">Básico<br /><span>50%</span></p>
-								</div>
-							</div>
+              <div class="about__skills--skill">
+                <i class="ri-layout-5-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Figma</h4>
+                  <p class="state">Básico<br /><span>50%</span></p>
+                </div>
+              </div>
 
-							<div class="about__skills--skill">
-								<i class="ri-css3-fill about__skills--icon"></i>
-								<div class="about__skills--skill-info">
-									<h4>Sass</h4>
-									<p class="state">Aprendiendo<br /><span>30%</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+              <div class="about__skills--skill">
+                <i class="ri-css3-fill about__skills--icon"></i>
+                <div class="about__skills--skill-info">
+                  <h4>Sass</h4>
+                  <p class="state">Aprendiendo<br /><span>30%</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!--==================== PROJECTS ====================-->
-		<section class="projects" id="projects">
-			<h2>Proyectos Realizados</h2>
+    <!--==================== PROJECTS ====================-->
+    <section class="projects" id="projects">
+      <h2>Proyectos Realizados</h2>
 
-			<div class="projects__container container">
-				<div class="projects__cards">
-					<!-- Card 1 -->
-					<article class="projects__card">
-						<a href="https://intecos.edu.co" target="_blank">
-							<img src="./img/projects/intecos.jpg" alt="Imagen de sitio web de INTECOS" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="https://intecos.edu.co" target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="https://intecos.edu.co" target="_blank">
-										intecos.edu.co
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>Wordpress, PHP</p>
-							</div>
-						</div>
-					</article>
+      <div class="projects__container container">
+        <div class="projects__cards">
+          <!-- Card 1 -->
+          <article class="projects__card">
+            <a href="https://intecos.edu.co" target="_blank">
+              <img src="./img/projects/intecos.jpg" alt="Imagen de sitio web de INTECOS" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="https://intecos.edu.co" target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="https://intecos.edu.co" target="_blank">
+                    intecos.edu.co
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>Wordpress, PHP</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Card 2 -->
-					<article class="projects__card">
-						<a href="https://esedco.edu.co" target="_blank">
-							<img src="./img/projects/esedco.jpg" alt="Imagen de sitio web de ESESCO" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="https://esedco.edu.co" target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="https://esedco.edu.co" target="_blank">
-										esedco.edu.co
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>Wordpress, PHP</p>
-							</div>
-						</div>
-					</article>
+          <!-- Card 2 -->
+          <article class="projects__card">
+            <a href="https://esedco.edu.co" target="_blank">
+              <img src="./img/projects/esedco.jpg" alt="Imagen de sitio web de ESESCO" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="https://esedco.edu.co" target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="https://esedco.edu.co" target="_blank">
+                    esedco.edu.co
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>Wordpress, PHP</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Card 3 -->
-					<article class="projects__card">
-						<a href="http://certificados.intecos.edu.co" target="_blank">
-							<img src="./img/projects/intecos-certificados.jpg" alt="Imagen de sitio web de Certificados de INTECOS" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="http://certificados.intecos.edu.co" target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="http://certificados.intecos.edu.co" target="_blank">
-										certificados.intecos.edu.co
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>HTML, Bootstrap, PHP, Codeigniter</p>
-							</div>
-						</div>
-					</article>
+          <!-- Card 3 -->
+          <article class="projects__card">
+            <a href="http://certificados.intecos.edu.co" target="_blank">
+              <img src="./img/projects/intecos-certificados.jpg" alt="Imagen de sitio web de Certificados de INTECOS" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="http://certificados.intecos.edu.co" target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="http://certificados.intecos.edu.co" target="_blank">
+                    certificados.intecos.edu.co
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>HTML, Bootstrap, PHP, Codeigniter</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Card 4 -->
-					<article class="projects__card">
-						<a href="http://oficinavirtual.intecos.edu.co/oficinavirtual" target="_blank">
-							<img src="./img/projects/intecos-oficina-virtual.jpg"
-								alt="Imagen de sitio web de Oficina Virtual de INTECOS" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="http://oficinavirtual.intecos.edu.co/oficinavirtual"
-									target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="http://oficinavirtual.intecos.edu.co/oficinavirtual" target="_blank">
-										oficinavirtual.intecos.edu.co
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>HTML, Bootstrap, PHP, Codeigniter</p>
-							</div>
-						</div>
-					</article>
+          <!-- Card 4 -->
+          <article class="projects__card">
+            <a href="http://oficinavirtual.intecos.edu.co/oficinavirtual" target="_blank">
+              <img src="./img/projects/intecos-oficina-virtual.jpg"
+                alt="Imagen de sitio web de Oficina Virtual de INTECOS" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="http://oficinavirtual.intecos.edu.co/oficinavirtual"
+                  target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="http://oficinavirtual.intecos.edu.co/oficinavirtual" target="_blank">
+                    oficinavirtual.intecos.edu.co
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>HTML, Bootstrap, PHP, Codeigniter</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Card 5 -->
-					<article class="projects__card">
-						<a href="https://certificados.esedco.edu.co" target="_blank">
-							<img src="./img/projects/certificados-esedco.jpg" alt="Imagen de sitio web de Certificados de ESEDCO" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="https://certificados.esedco.edu.co" target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="https://certificados.esedco.edu.co" target="_blank">
-										certificados.esedco.edu.co
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>HTML, Bootstrap, PHP, Codeigniter</p>
-							</div>
-						</div>
-					</article>
+          <!-- Card 5 -->
+          <article class="projects__card">
+            <a href="https://certificados.esedco.edu.co" target="_blank">
+              <img src="./img/projects/certificados-esedco.jpg" alt="Imagen de sitio web de Certificados de ESEDCO" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="https://certificados.esedco.edu.co" target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="https://certificados.esedco.edu.co" target="_blank">
+                    certificados.esedco.edu.co
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>HTML, Bootstrap, PHP, Codeigniter</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Card 6 -->
-					<article class="projects__card">
-						<a href="http://notas.intecos.edu.co/notas/" target="_blank">
-							<img src="./img/projects/notas-intecos.jpg" alt="Imagen de sitio web de consulta de notas de INTECOS" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="http://notas.intecos.edu.co/notas/" target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="http://notas.intecos.edu.co/notas/" target="_blank">
-										notas.intecos.edu.co
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>HTML, Bootstrap, Javascript, PHP, Laravel</p>
-							</div>
-						</div>
-					</article>
+          <!-- Card 6 -->
+          <article class="projects__card">
+            <a href="http://notas.intecos.edu.co/notas/" target="_blank">
+              <img src="./img/projects/notas-intecos.jpg" alt="Imagen de sitio web de consulta de notas de INTECOS" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="http://notas.intecos.edu.co/notas/" target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="http://notas.intecos.edu.co/notas/" target="_blank">
+                    notas.intecos.edu.co
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>HTML, Bootstrap, Javascript, PHP, Laravel</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Card 7 -->
-					<article class="projects__card">
-						<a href="https://ricardovivesalcalde.com" target="_blank">
-							<img src="./img/projects/ricardo-vives-alcalde.jpg" alt="Imagen de sitio web de Ricardo Vives Fernández" />
-						</a>
-						<div class="projects__card--body">
-							<div class="projects__card--btn-container">
-								<a class="projects__card--btn" href="https://ricardovivesalcalde.com" target="_blank">
-									Ir
-								</a>
-							</div>
-							<div class="projects__card--info-container">
-								<h4>
-									<a href="https://ricardovivesalcalde.com" target="_blank">
-										ricardovivesalcalde.com
-									</a>
-								</h4>
-								<p>Tecnologías usadas:</p>
-								<p>HTML, Bootstrap, Javascript, PHP, Laravel</p>
-							</div>
-						</div>
-					</article>
+          <!-- Card 7 -->
+          <article class="projects__card">
+            <a href="https://ricardovivesalcalde.com" target="_blank">
+              <img src="./img/projects/ricardo-vives-alcalde.jpg"
+                alt="Imagen de sitio web de Ricardo Vives Fernández" />
+            </a>
+            <div class="projects__card--body">
+              <div class="projects__card--btn-container">
+                <a class="projects__card--btn" href="https://ricardovivesalcalde.com" target="_blank">
+                  Ir
+                </a>
+              </div>
+              <div class="projects__card--info-container">
+                <h4>
+                  <a href="https://ricardovivesalcalde.com" target="_blank">
+                    ricardovivesalcalde.com
+                  </a>
+                </h4>
+                <p>Tecnologías usadas:</p>
+                <p>HTML, Bootstrap, Javascript, PHP, Laravel</p>
+              </div>
+            </div>
+          </article>
 
-					<!-- Empty Card -->
-					<article class="hide projects__card">
-					</article>
+          <!-- Empty Card -->
+          <article class="hide projects__card">
+          </article>
 
-					<!-- Empty Card -->
-					<article class="hide projects__card">
-					</article>
+          <!-- Empty Card -->
+          <article class="hide projects__card">
+          </article>
 
-				</div>
-			</div>
-		</section>
+        </div>
+      </div>
+    </section>
 
-		<!--==================== CONTACT ====================-->
-		<section class="contact" id="contact">
-			<div class="contact__overlay">
-				<h2>Contacto</h2>
+    <!--==================== CONTACT ====================-->
+    <section class="contact" id="contact">
+      <div class="contact__overlay">
+        <h2>Contacto</h2>
 
-				<div class="contact__container container">
-					<form id="contact-form" class="w-100">
-						<div class="form-container">
-							<!-- Alert de error en name -->
-							<div class="alert alert-danger no-display" id="alertTxtName"></div>
+        <div class="contact__container container">
+          <form id="contact-form" class="w-100">
+            <div class="form-container">
+              <!-- Alert de error en name -->
+              <div class="alert alert-danger no-display" id="alertTxtName"></div>
 
-							<div class="form-item w-100">
-								<input type="text" name="txtName" id="txtName" placeholder="Nombre:" autocomplete="off" />
-							</div>
+              <div class="form-item w-100">
+                <input type="text" name="txtName" id="txtName" placeholder="Nombre:" autocomplete="off" />
+              </div>
 
-							<!-- Alert de error en email -->
-							<div class="alert alert-danger no-display" id="alertTxtEmail"></div>
+              <!-- Alert de error en email -->
+              <div class="alert alert-danger no-display" id="alertTxtEmail"></div>
 
-							<div class="form-item w-100">
-								<input type="email" name="txtEmail" id="txtEmail" placeholder="Email:" autocomplete="off" />
-							</div>
+              <div class="form-item w-100">
+                <input type="email" name="txtEmail" id="txtEmail" placeholder="Email:" autocomplete="off" />
+              </div>
 
-							<!-- Alert de error en message -->
-							<div class="alert alert-danger no-display" id="alertTxtMessage"></div>
+              <!-- Alert de error en message -->
+              <div class="alert alert-danger no-display" id="alertTxtMessage"></div>
 
-							<div class="form-item w-100">
-								<textarea name="txtMessage" id="txtMessage" rows="10" value="" placeholder="Mensaje:"></textarea>
-							</div>
+              <div class="form-item w-100">
+                <textarea name="txtMessage" id="txtMessage" rows="10" value="" placeholder="Mensaje:"></textarea>
+              </div>
 
-							<!-- Alert de error en captcha -->
-							<div class="alert alert-danger no-display" id="alertTxtCaptcha"></div>
+              <!-- Alert de error en captcha -->
+              <div class="alert alert-danger no-display" id="alertTxtCaptcha"></div>
 
-							<div class="captcha-container form-item w-100 flex">
-								<div class="captcha w-50 flex">
-									<div class="captcha-content"></div>
-									<i class="ri-refresh-line captcha-reload-icon"></i>
-								</div>
-								<input type="text" name="txtCaptcha" id="txtCaptcha" class="w-100" placeholder="Ingrese el captcha:"
-									autocomplete="off" />
-							</div>
+              <div class="captcha-container form-item w-100 flex">
+                <div class="captcha w-50 flex">
+                  <div class="captcha-content"></div>
+                  <i class="ri-refresh-line captcha-reload-icon"></i>
+                </div>
+                <input type="text" name="txtCaptcha" id="txtCaptcha" class="w-100" placeholder="Ingrese el captcha:"
+                  autocomplete="off" />
+              </div>
 
-							<!-- Alert de envío con error -->
-							<div class="alert alert-danger no-display" id="alertFailSubmit"></div>
+              <!-- Alert de envío con error -->
+              <div class="alert alert-danger no-display" id="alertFailSubmit"></div>
 
-							<!-- Alert de envío con éxito -->
-							<div class="alert alert-success no-display" id="alertSuccessSubmit"></div>
+              <!-- Alert de envío con éxito -->
+              <div class="alert alert-success no-display" id="alertSuccessSubmit"></div>
 
-							<!-- Loading animation while fetch is used -->
-							<div class="form-item no-display" id="loader-container">
-								<p class="loader-info flex">
-									Enviando mensaje...<span class="loader"></span>
-								</p>
-							</div>
+              <!-- Loading animation while fetch is used -->
+              <div class="form-item no-display" id="loader-container">
+                <p class="loader-info flex">
+                  Enviando mensaje...<span class="loader"></span>
+                </p>
+              </div>
 
-							<button type="submit" class="btn w-40">Enviar</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-	</main>
+              <button type="submit" class="btn w-40">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-	<!--==================== FOOTER ====================-->
-	<footer>
-		<div class="footer__container container">
-			<div class="footer__left">
-				<h3>EMERSON <span>CABRERA</span></h3>
-				<p>Profesor y Desarrollador Web</p>
-				<img src="./img/logo.png" class="logo" alt="Logo de Emerson Cabrera" />
-			</div>
+  <!--==================== FOOTER ====================-->
+  <footer>
+    <div class="footer__container container">
+      <div class="footer__left">
+        <h3>EMERSON <span>CABRERA</span></h3>
+        <p>Profesor y Desarrollador Web</p>
+        <img src="./img/logo.png" class="logo" alt="Logo de Emerson Cabrera" />
+      </div>
 
-			<div class="footer__center">
-				<div class="footer__center--location">
-					<i class="ri-map-pin-user-fill"></i>
-					<p>Valledupar, Colombia.</p>
-				</div>
-				<div class="footer__center--email">
-					<i class="ri-mail-fill"></i>
-					<p>
-						<a href="mailto:info@emersoncabrera.com">info@emersoncabrera.com</a>
-					</p>
-				</div>
-				<div class="footer__center--contact">
-					<i class="ri-contacts-book-2-fill"></i>
-					<p><a href="">Contacto</a></p>
-				</div>
-			</div>
-		</div>
-	</footer>
+      <div class="footer__center">
+        <div class="footer__center--location">
+          <i class="ri-map-pin-user-fill"></i>
+          <p>Valledupar, Colombia.</p>
+        </div>
+        <div class="footer__center--email">
+          <i class="ri-mail-fill"></i>
+          <p>
+            <a href="mailto:info@emersoncabrera.com">info@emersoncabrera.com</a>
+          </p>
+        </div>
+        <div class="footer__center--contact">
+          <i class="ri-contacts-book-2-fill"></i>
+          <p><a href="">Contacto</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-	<!--=============== JS ===============-->
-	<script src="./js/main.js"></script>
-	<script src="./js/contact-form.js" type="module"></script>
+  <!--=============== JS ===============-->
+  <script src="./js/main.js"></script>
+  <script src="./js/contact-form.js" type="module"></script>
 </body>
 
 </html>
